@@ -42,10 +42,10 @@ function fetch(method, url, responseCallback) {
 fetch('GET', 'https://frozen-caverns-62155.herokuapp.com/api', updateDOM);
 
 
-  document.getElementById('submit').addEventListener('click', function(){
-    var month = document.getElementById('month').value;
-    var day = document.getElementById('day').value;
-    var date = '2017-'+month+'-'+day;
-    var url = 'https://frozen-caverns-62155.herokuapp.com/api?q='+ date;
-    fetch('GET', url, updateDOM);
-  })
+  // document.getElementById('submit').addEventListener('click', function(){
+  //   var month = document.getElementById('month').value;
+  //   var day = document.getElementById('day').value;
+  //   var date = '2017-'+month+'-'+day;
+  //   var url = 'https://frozen-caverns-62155.herokuapp.com/api?q='+ date;
+  //   fetch('GET', url, updateDOM);
+  // })
