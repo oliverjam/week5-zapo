@@ -47,8 +47,13 @@ handlers.pageNotFound = (request, response) => {
   response.end();
 };
 
-handlers.serveAPI = (request, response) => {
-  const datesArr = createDates.createDateArr(createDates.createDate(createDates.myDate));
+handlers.serveAPI = (request, response, date) => {
+  let datesArr;
+  if (date) {
+    datesArr = createDates.createDateArr(date);
+  } else {
+    datesArr = createDates.createDateArr(createDates.createDate(createDates.myDate));
+  }
   getObits(datesArr, (err, res) => {
     if (err) {
       // if error send 500 error to browser
