@@ -37,3 +37,10 @@ To satisfy these user stories, we will create a site that makes a request to the
 ### Stretch goals
 
 - [ ] I want to be able to choose a date and see obituaries from that day on previous years.
+
+### Learnings
+
+We found this nice bit of regex to remove html tags from strings. :smiley:
+`
+string.replace(/<(?:.|\n)*?>/gm, '')
+`
