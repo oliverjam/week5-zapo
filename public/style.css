@@ -9,11 +9,6 @@
   box-sizing: inherit;
 }
 
-input {
-  padding: 2rem;
-  margin: 2rem;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

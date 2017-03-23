@@ -20,9 +20,11 @@
   <div class="container">
     <div id="app" class="flex-container"></div>
   </div>
-<input id='day' type="number" name="day" placeholder='Day (dd)'></input>
-<input id='month' type="number" name="month" placeholder='Month (mm)'></input>
+  <form>
+<input id='day' type="number" name="day" placeholder='Day (dd)' max="31" min='1'> </input>
+<input id='month' type="number" name="month" placeholder='Month (mm)' max="12" min='1'></input>
 <button id='submit' type="submit">Submit</button>
+</form>
   <script src="index.js"></script>
 </body>
 
