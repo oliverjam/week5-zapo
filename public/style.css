@@ -9,8 +9,7 @@
   box-sizing: inherit;
 }
 
-input {
-  padding: 2rem;
+form {
   margin: 2rem;
 }
 
