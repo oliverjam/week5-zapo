@@ -18,13 +18,16 @@
     <img src="./assets/skull.svg" class="header__icon" alt="">
   </header>
   <div class="container">
+    <form class="form">
+      <p class="form__caption">Enter a date to see the people who have died on this day over the last 10 years:</p>
+      <div class="form__container">
+        <label class="form__input visually-hidden" for="date">Date</label>
+        <input class="form__input" id='date' type="date" value="2017-03-24">
+        <button class="form__input form__input--btn" id='submit' type="submit">Submit</button>
+      </div>
+    </form>
     <div id="app" class="flex-container"></div>
   </div>
-  <form>
-  Enter a date to see the people who have died on this day over the last 10 years :<br>
-  <input id='date' type="date" <br><br>
-  <input id='submit' type="submit">
-  </form>
   <script src="index.js"></script>
 </body>
 
