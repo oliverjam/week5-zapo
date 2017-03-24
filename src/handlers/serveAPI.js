@@ -13,7 +13,9 @@ function serveAPI(request, response, date) {
       response.writeHead(500, { 'Content-Type': 'text/html', 'access-control-allow-origin': '*' });
       response.end("<h1>Sorry, we've got some problems on our side, don't worry, it'll all be over soon</h1>");
     }
-    res.sort((a, b) => b.date.slice(0, 4) - a.date.slice(0, 4));
+    if (res.every(e => e.date)) {
+      res.sort((a, b) => b.date.slice(0, 4) - a.date.slice(0, 4));
+    }
     response.writeHead(200, { 'Content-Type': 'application/json', 'access-control-allow-origin': '*' });
     response.end(JSON.stringify(res));
   });
