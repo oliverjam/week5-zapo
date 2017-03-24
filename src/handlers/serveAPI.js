@@ -4,7 +4,11 @@ const createDates = require('../createDates.js');
 function serveAPI(request, response, date) {
   let datesArr;
   if (date) {
-    datesArr = createDates.createDateArr(date);
+    if (date.match(/^(19|20)\d\d([- \/.])(0[1-9]|1[012])\2(0[1-9]|[12][0-9]|3[01])$/g)) {
+      datesArr = createDates.createDateArr(date);
+    } else {
+      throw new Error('Date needs to be in a valid format. yyyy-mm-dd');
+    }
   } else {
     datesArr = createDates.createDateArr(createDates.createDate(createDates.myDate));
   }
