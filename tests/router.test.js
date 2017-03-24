@@ -61,3 +61,11 @@ test('Test servePublic with error', (t) => {
     t.end();
   });
 });
+
+test('Testing serveAPI', (t) => {
+  shot.inject(router, { method: 'get', url: '/api' }, (response) => {
+    t.equal(response.statusCode, 200, 'should respond with status code of 200');
+    t.equal(response.headers['Content-Type'], 'application/json');
+    t.end();
+  });
+});
