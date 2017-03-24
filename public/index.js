@@ -9,7 +9,6 @@ document.getElementById('app').innerHTML='';
     link.appendChild(title);
     link.appendChild(summary);
     link.appendChild(date);
-    // container.appendChild(link);
     var app = document.getElementById('app');
     app.appendChild(link);
   })
