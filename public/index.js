@@ -9,7 +9,6 @@ document.getElementById('app').innerHTML='';
     link.appendChild(title);
     link.appendChild(summary);
     link.appendChild(date);
-    // container.appendChild(link);
     var app = document.getElementById('app');
     app.appendChild(link);
   })
@@ -28,7 +27,6 @@ function fetch(method, url, responseCallback) {
     request.onreadystatechange = function() {
         if (request.readyState === 4 && request.status === 200) {
             var data = JSON.parse(request.responseText);
-            console.log(data);
             responseCallback(data);
         }
     }

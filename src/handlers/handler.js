@@ -1,9 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const serveAPI = require('./serveAPI.js');
-// const getObits = require('../getObits.js');
-// const createDates = require('../createDates.js');
-// const handleAPI = require(./handleAPI); //TBC
 
 const handlers = module.exports = {};
 
