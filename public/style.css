@@ -47,21 +47,26 @@ body {
   height: 2em;
 }
 
+.container {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 .obit {
   background-color: #262223;
   padding: 1em;
   display: block;
   text-decoration: none;
   color: inherit;
-}
-.obit:not(:last-child){
-  margin-bottom: 1em;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.container {
-  max-width: 60em;
-  margin: 0 auto;
-  padding: 1em;
+.obit:not(:last-child){
+  margin-bottom: 1em;
 }
 
 .obit__title {
@@ -69,6 +74,15 @@ body {
   font-family: 'Carrois Gothic SC';
   text-decoration: none;
   margin-bottom: 0.25em;
+}
+
+.obit__date {
+  margin-top: auto;
+  text-align: right;
+}
+
+.obit__date::before {
+  content: 'Published: ';
 }
 
 @media (min-width: 54em) {
