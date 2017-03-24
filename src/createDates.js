@@ -43,7 +43,4 @@ const makeDates = {
   createDateArr,
 };
 
-// console.log(makeDates.createDateArr('1993-02-03'));
-
-
 module.exports = makeDates;
