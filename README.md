@@ -3,6 +3,14 @@
 [![Build Status](https://travis-ci.org/oliverjam/week5-zapo.svg?branch=master)](https://travis-ci.org/oliverjam/week5-zapo)
 [![codecov](https://codecov.io/gh/oliverjam/week5-zapo/branch/master/graph/badge.svg)](https://codecov.io/gh/oliverjam/week5-zapo)
 
+### Installation instructions
+
+1. Clone this repo and move into the directory in your terminal
+2. Run `npm install`
+3. Run `npm test` to run tests
+4. Run `npm run coverage` to run the coverage
+5. Run `npm start` to start the server locally
+
 ### User stories
 
 - [ ] I want to be able to see an obituary from this day each year (back to 1999)
