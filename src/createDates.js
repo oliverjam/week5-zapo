@@ -1,8 +1,8 @@
 // function createDatesArr() {
-//   const today = new Date();
-//   let dd = today.getDate();
-//   let mm = today.getMonth() + 1;
-//   const yyyy = today.getFullYear();
+  // const today = new Date();
+  // let dd = today.getDate();
+  // let mm = today.getMonth() + 1;
+  // const yyyy = today.getFullYear();
 //
 //   if (dd.length < 2) {
 //     dd = `0${dd}`;

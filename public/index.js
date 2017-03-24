@@ -41,11 +41,16 @@ function fetch(method, url, responseCallback) {
 
 fetch('GET', 'https://frozen-caverns-62155.herokuapp.com/api', updateDOM);
 
-
-  // document.getElementById('submit').addEventListener('click', function(){
-  //   var month = document.getElementById('month').value;
-  //   var day = document.getElementById('day').value;
-  //   var date = '2017-'+month+'-'+day;
-  //   var url = 'https://frozen-caverns-62155.herokuapp.com/api?q='+ date;
-  //   fetch('GET', url, updateDOM);
-  // })
+  document.getElementById('submit').addEventListener('click', function(){
+    event.preventDefault();
+    var dateInitial = document.getElementById('date').value.split('-').slice(1,3).join('-');
+    var today = new Date();
+    var yyyy = today.getFullYear();
+    var date = yyyy+'-'+dateInitial;
+    var today = new Date().toISOString().slice(0, 10);
+    if(date > today) {
+      date = (yyyy-1)+'-'+dateInitial;
+    }
+    var url = 'https://frozen-caverns-62155.herokuapp.com/api?q='+ date;
+    fetch('GET', url, updateDOM);
+  })

@@ -9,6 +9,10 @@
   box-sizing: inherit;
 }
 
+form {
+  margin: 2rem;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
