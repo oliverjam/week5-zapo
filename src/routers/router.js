@@ -10,7 +10,7 @@ module.exports = function (request, response) {
   } else if (url.indexOf('/api?q=') !== -1) {
     const date = url.split('=')[1];
     handlers.serveAPI(request, response, date);
-  } else if (url.indexOf('/api') !== -1) { // TBC
+  } else if (url.indexOf('/api') !== -1) {
     handlers.serveAPI(request, response);
   } else {
     handlers.pageNotFound(request, response);

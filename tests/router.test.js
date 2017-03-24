@@ -11,12 +11,6 @@ const routerTests = () => {
       t.end();
     });
   });
-  // test('test serveLanding with error', (t) => {
-  //   shot.inject(router, { method: 'get', url: '/', simulate: { error: true } }, (response) => {
-  //     t.equal(response, 500, 'Should respond with a status code of 500');
-  //     t.end();
-  //   });
-  // });
 
   test('test servePublic with html', (t) => {
     shot.inject(router, { method: 'get', url: 'index.html' }, (response) => {
